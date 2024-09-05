@@ -59,9 +59,11 @@ export function SignIn() {
             }
             containerProps={{ className: "-ml-2.5" }}
           />
-          <Button className="mt-6" fullWidth>
-            Sign In
-          </Button>
+          <a href="/home">
+            <Button className="mt-6" fullWidth>
+              Sign In
+            </Button>
+          </a>
 
           <div className="flex items-center justify-between gap-2 mt-6">
             <Checkbox
@@ -113,7 +115,7 @@ export function SignIn() {
       </div>
       <div className="w-2/5 h-full hidden lg:block">
         <img
-          src="/img/pattern.png"
+          src="/img/sign.jpg"
           className="h-full w-full object-cover rounded-3xl"
         />
       </div>

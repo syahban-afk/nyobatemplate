@@ -19,8 +19,8 @@ export function Home() {
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
-        <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
-        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background-1.jpg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-gray-800/50 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
@@ -29,9 +29,9 @@ export function Home() {
                 color="white"
                 className="mb-6 font-black"
               >
-                Your story starts with us.
+                Your <span className="text-deep-orange-500">story starts </span>with us.
               </Typography>
-              <Typography variant="lead" color="white" className="opacity-80">
+              <Typography variant="lead" color="amber" className="opacity-80">
                 This is a simple example of a Landing Page you can build using
                 Material Tailwind. It features multiple components based on the
                 Tailwind CSS and Material Design by Google.
@@ -40,7 +40,7 @@ export function Home() {
           </div>
         </div>
       </div>
-      <section className="-mt-32 bg-white px-4 pb-20 pt-4">
+      <section className="-mt-32 bg-gray-100 px-4 pb-20 pt-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map(({ color, title, icon, description }) => (
@@ -58,7 +58,7 @@ export function Home() {
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-gray-900 p-2 text-center shadow-lg">
-                <FingerPrintIcon className="h-8 w-8 text-white " />
+                <FingerPrintIcon className="h-8 w-8 text-light-green-50 " />
               </div>
               <Typography
                 variant="h3"
@@ -77,10 +77,12 @@ export function Home() {
                 faster. You can change the text and images and you're good to
                 go. Just make sure you enable them first via JavaScript.
               </Typography>
-              <Button variant="filled">read more</Button>
+              <a href="#">
+                <Button variant="gradient" color="indigo">read more</Button>
+              </a>
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
-              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg">
+              <Card className="shadow-lg border shadow-gray-500/10 rounded-lg bg-light-blue-100">
                 <CardHeader floated={false} className="relative h-56">
                   <img
                     alt="Card Image"
@@ -108,7 +110,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      <section className="px-4 pt-20 pb-48 bg-gray-200/95">
         <div className="container mx-auto">
           <PageTitle section="Our Team" heading="Here are our heroes">
             According to the National Oceanic and Atmospheric Administration,
@@ -136,7 +138,7 @@ export function Home() {
           </div>
         </div>
       </section>
-      <section className="relative bg-white py-24 px-4">
+      <section className="relative bg-blue-gray-50 py-24 px-4">
         <div className="container mx-auto">
           <PageTitle section="Co-Working" heading="Build something">
             Put the potentially record low maximum sea ice extent tihs year down

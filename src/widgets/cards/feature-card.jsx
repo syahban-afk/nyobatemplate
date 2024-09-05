@@ -6,14 +6,14 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-export function FeatureCard({ color, icon, title, description }) {
+export function FeatureCard({ icon, title, description }) {
   return (
-    <Card className="rounded-lg shadow-lg shadow-gray-500/10">
+    <Card className="rounded-lg shadow-lg shadow-gray-500/10 bg-indigo-50">
       <CardBody className="px-8 text-center">
         <IconButton
           variant="gradient"
           size="lg"
-          color={color}
+          color= "teal"
           className="pointer-events-none mb-6 rounded-full"
         >
           {icon}

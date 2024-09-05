@@ -2,12 +2,12 @@ import { Home, Profile, SignIn, SignUp } from "@/pages";
 
 export const routes = [
   {
-    name: "home",
+    name: "Home",
     path: "/home",
     element: <Home />,
   },
   {
-    name: "profile",
+    name: "Profile",
     path: "/profile",
     element: <Profile />,
   },
@@ -20,12 +20,6 @@ export const routes = [
     name: "Sign Up",
     path: "/sign-up",
     element: <SignUp />,
-  },
-  {
-    name: "Docs",
-    href: "https://www.material-tailwind.com/docs/react/installation",
-    target: "_blank",
-    element: "",
   },
 ];
 

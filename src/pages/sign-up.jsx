@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 export function SignUp() {
   return (
     <section className="m-8 flex">
-            <div className="w-2/5 h-full hidden lg:block">
+      <div className="w-2/5 h-full hidden lg:block">
         <img
-          src="/img/pattern.png"
+          src="/img/sign.jpg"
           className="h-full w-full object-cover rounded-3xl"
         />
       </div>
@@ -53,9 +53,11 @@ export function SignUp() {
             }
             containerProps={{ className: "-ml-2.5" }}
           />
-          <Button className="mt-6" fullWidth>
-            Register Now
-          </Button>
+          <a href="/home">
+            <Button className="mt-6" fullWidth>
+              Register Now
+            </Button>
+          </a>
 
           <div className="space-y-4 mt-8">
             <Button size="lg" color="white" className="flex items-center gap-2 justify-center shadow-md" fullWidth>

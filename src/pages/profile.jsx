@@ -10,8 +10,8 @@ export function Profile() {
   return (
     <>
       <section className="relative block h-[50vh]">
-        <div className="bg-profile-background absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center scale-105" />
-        <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-[url('/img/background-2.jpg')] bg-cover bg-center" />
+        <div className="absolute top-0 h-full w-full bg-gray-800/50 bg-cover bg-center" />
       </section>
       <section className="relative bg-white py-16">
         <div className="relative mb-6 -mt-40 flex w-full px-4 min-w-0 flex-col break-words bg-white">
@@ -20,7 +20,7 @@ export function Profile() {
               <div className="relative flex gap-6 items-start">
                 <div className="-mt-20 w-40">
                   <Avatar
-                    src="/img/team-5.png"
+                    src="/img/team-1.jpg"
                     alt="Profile picture"
                     variant="circular"
                     className="h-full w-full"
@@ -28,9 +28,9 @@ export function Profile() {
                 </div>
                 <div className="flex flex-col mt-2">
                   <Typography variant="h4" color="blue-gray">
-                    Jenna Stones
+                    John
                   </Typography>
-                  <Typography variant="paragraph" color="gray" className="!mt-0 font-normal">jena@mail.com</Typography>
+                  <Typography variant="paragraph" color="gray" className="!mt-0 font-normal">jhon@mail.com</Typography>
                 </div>
               </div>
 
